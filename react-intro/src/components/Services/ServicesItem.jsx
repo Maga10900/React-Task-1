@@ -12,12 +12,6 @@ function ServicesItem({ obj, setServices, servicesArray, bagArray, setBag}) {
     setServices(newArr);
   }
 
-  function handleDelete(id) {
-    let newArr = [...servicesArray];
-    let elementIndex = newArr.findIndex((item) => item.id === id);
-    newArr.splice(elementIndex, 1);
-    setServices(newArr);
-  }
 
   function handleAddToBag(item)
   {
